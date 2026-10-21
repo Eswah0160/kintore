@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Kintore</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="theme-color" content="#E7E7E4">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Kintore">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<header class="topbar"><div class="in">
+  <h1 class="brand">Kintore <small>筋トレ</small></h1>
+  <button type="button" class="iconbtn" data-a="settings" aria-label="Settings"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg></button>
+</div></header>
+<main><div class="page" id="view"></div></main>
+<div id="rest" hidden><div class="in"><div class="prog"><i id="rest-i"></i></div><span class="lbl">Rest</span><span class="t" id="rest-t">1:30</span><span class="grow small muted ellipsis" id="rest-n"></span>
+  <button type="button" class="btn sm" data-a="rest-add" aria-label="Add 15 seconds">+15</button><button type="button" class="btn sm ghost" data-a="rest-stop">Skip</button></div></div>
+<nav class="bottomnav" aria-label="Sections"><div class="in" id="nav"></div></nav>
+<div id="sheetwrap" hidden><button type="button" class="scrim" data-a="close" aria-label="Close"></button><div class="sheet" role="dialog" aria-modal="true" id="sheet"></div></div>
+<div id="toastwrap"></div>
+<script src="js/figs.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/pets.js"></script>
+<script src="js/app.js"></script>
+<script src="js/walk.js"></script>
+<script src="js/plan.js"></script>
+<script src="js/coach.js"></script>
+<script src="js/me.js"></script>
+<script src="js/web.js"></script>
+<script src="js/boot.js"></script>
+</body>
+</html>
